@@ -5,9 +5,9 @@ public class Triangulo {
     private int b;
     private int c;
 
-    public Triangulo(int a, int b, int c) throws Exception {
+    public Triangulo(int a, int b, int c) {
         if (!esTrianguloValido(a, b, c)) {
-            throw new Exception("Los valores ingresados no formarán un triángulo válido.");
+            throw new IllegalArgumentException("Los valores ingresados no formarán un triángulo válido.");
         }
         this.a = a;
         this.b = b;
