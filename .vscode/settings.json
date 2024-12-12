@@ -3,5 +3,9 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "*.tcc": "cpp"
+    }
 }

@@ -8,6 +8,7 @@ public class EmpleadoPorComision extends Empleado {
         super(primerNombre, apellidoPaterno, numeroSocial);
         if (ventasBrutas < 0) throw new IllegalArgumentException("Error: La ventas brutas deben ser >= 0");
         if (tarifaComision <= 0 || tarifaComision >= 1) throw new IllegalArgumentException("Error: La tarifa de comision debe ser > 0 y < 1");
+
         this.ventasBrutas = ventasBrutas;
         this.tarifaComision = tarifaComision;
     }
@@ -18,6 +19,7 @@ public class EmpleadoPorComision extends Empleado {
 
     public void setVentasBrutas(double ventasBrutas) {
         if (ventasBrutas < 0) throw new IllegalArgumentException("Error: La ventas brutas deben ser >= 0");
+
         this.ventasBrutas = ventasBrutas;
     }
 
@@ -27,6 +29,7 @@ public class EmpleadoPorComision extends Empleado {
 
     public void setTarifaComision(double tarifaComision) {
         if (tarifaComision <= 0 || tarifaComision >= 1) throw new IllegalArgumentException("Error: La tarifa de comision debe ser > 0 y < 1");
+
         this.tarifaComision = tarifaComision;
     }
 

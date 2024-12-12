@@ -3,10 +3,37 @@ package S13_Polimorfismo.Lab1;
 public class Main {
     public static void main(String[] args) {
         // crea objetos de las subclases
-        EmpleadoAsalariado empleadoAsalariado = new EmpleadoAsalariado("Juan", "Perez", "111-11-1111", 800.00);
-        EmpleadoPorHoras empleadoPorHoras = new EmpleadoPorHoras("Karen", "Padilla", "222-22-2222", 16.75, 40);
-        EmpleadoPorComision empleadoPorComision =  new EmpleadoPorComision("Susana", "Jimenez", "333-33-3333", 10000, .06);
-        EmpleadoBaseMasComision empleadoBaseMasComision =  new EmpleadoBaseMasComision("Basilio", "Loza", "444-44-4444", 5000, .04, 300);
+        EmpleadoAsalariado empleadoAsalariado = new EmpleadoAsalariado(
+            "Juan",
+            "Perez",
+            "111-11-1111",
+            800.00
+        );
+
+        EmpleadoPorHoras empleadoPorHoras = new EmpleadoPorHoras(
+            "Karen",
+            "Padilla",
+            "222-22-2222",
+            16.75,
+            40
+        );
+
+        EmpleadoPorComision empleadoPorComision =  new EmpleadoPorComision(
+            "Susana",
+            "Jimenez",
+            "333-33-3333",
+            10000,
+            .06
+        );
+
+        EmpleadoBaseMasComision empleadoBaseMasComision =  new EmpleadoBaseMasComision(
+            "Basilio",
+            "Loza",
+            "444-44-4444",
+            5000,
+            .04,
+            300
+        );
 
         System.out.println("Empleados procesados por separado:");
         System.out.printf("%n%s%n%s: $%,.2f%n%n", empleadoAsalariado, "ingresos", empleadoAsalariado.ingresos());

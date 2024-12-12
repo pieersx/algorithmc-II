@@ -7,7 +7,7 @@ public class Main {
         System.out.printf("Maximo de %s, %s y %s es %s\n", "pera", "manzana", "naranja", maximo( "pera", "manzana", "naranja"));
     }
 
-    public static<T extends Comparable<T>> T maximo(T x, T y, T z) {
+    public static <T extends Comparable<T>> T maximo(T x, T y, T z) {
         T max = x;
         if (y.compareTo(max) > 0) {
             max = y;

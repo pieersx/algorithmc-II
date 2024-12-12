@@ -8,6 +8,7 @@ public class EmpleadoPorHoras extends Empleado {
         super(primerNombre, apellidoPaterno, numeroSeguroSocial);
         if (sueldo < 0) throw new IllegalArgumentException("Error: El sueldo por hora debe ser >= 0");
         if (horas < 0 || horas > 168) throw new IllegalArgumentException("Error: Las horas trabajadas deben ser >= 0 y <= 168");
+
         this.sueldo = sueldo;
         this.horas = horas;
     }
@@ -18,6 +19,7 @@ public class EmpleadoPorHoras extends Empleado {
 
     public void setSueldo(double sueldo) {
         if (sueldo < 0) throw new IllegalArgumentException("Error: El sueldo por hora debe ser >= 0");
+
         this.sueldo = sueldo;
     }
 
@@ -27,6 +29,7 @@ public class EmpleadoPorHoras extends Empleado {
 
     public void setHoras(double horas) {
         if (horas < 0 || horas > 168) throw new IllegalArgumentException("Error: Las horas trabajadas deben ser >= 0 y <= 168");
+
         this.horas = horas;
     }
 
@@ -41,8 +44,9 @@ public class EmpleadoPorHoras extends Empleado {
     public String toString(){
         return String.format(
             "empleado por horas: %s%n%s: $%,.2f; %s: %,.2f",
-            super.toString(), "sueldo por hora", getSueldo(),
+            super.toString(),
+            "sueldo por hora", getSueldo(),
             "horas trabajadas", getHoras()
         );
-        }
+    }
 }

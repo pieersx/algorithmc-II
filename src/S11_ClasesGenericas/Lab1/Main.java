@@ -18,7 +18,7 @@ public class Main {
         imprimirArreglo(arregloCharacter);
     }
 
-    public static<E> void imprimirArreglo(E[] arregloEntrada) {
+    public static <E> void imprimirArreglo(E[] arregloEntrada) {
         for (E elemento : arregloEntrada) {
             System.out.printf("%s ", elemento);
         }
